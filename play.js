@@ -43,6 +43,22 @@ console.log(hobbies.map(hobby => {
     return "Hobby: " + hobby;
 } 
 ));
+
+//spread operator
+const copiedPerson = {...person};
+const copiedArray = [...hobbies];
+
+//convert array
+const toArray = (...arg) => {
+return arg;
+};
+
+console.log(toArray(1,2,3))
+
 console.log(summarizeUser(namee,age,hasHobbies));
 console.log(add(1,2));
-person.greeet()
+person.greeet();
+console.log(copiedPerson);
+console.log(copiedArray);
+
+
