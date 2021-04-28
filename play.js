@@ -53,6 +53,24 @@ const toArray = (...arg) => {
 return arg;
 };
 
+//ikisi de aynı fonksiyon parametre gösterim farklı. (destructuring)
+
+// const printName = (personData) =>{
+//     console.log(personData.namee)
+// }
+
+const printName = ({namee}) =>{
+    console.log(namee)
+}
+
+//destructuring
+const {NAME,AGE} = person;
+const [HOBBY1,HOBBY2] = hobbies;
+
+
+
+
+
 console.log(toArray(1,2,3))
 
 console.log(summarizeUser(namee,age,hasHobbies));
@@ -60,5 +78,7 @@ console.log(add(1,2));
 person.greeet();
 console.log(copiedPerson);
 console.log(copiedArray);
+printName(person);
+
 
 
