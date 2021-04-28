@@ -16,12 +16,23 @@ function summarizeUser( userName, userAge, userHasHobby){
     return(
         "Name is"+
         userName + 
-        ", age is" +
+        " , age is " +
         userAge +
         "and the user has hobbies" +
         userHasHobby
     );
 };
 
+//Object: Properties and Methods
+//this keyword in the arrow func is present global object. 
+const person = {
+    namee:"Max",
+    age:29,
+    greeet: function() {
+        console.log("Hi , I am "+ this.namee)
+    }
+}
+
 console.log(summarizeUser(namee,age,hasHobbies));
 console.log(add(1,2));
+person.greeet()
