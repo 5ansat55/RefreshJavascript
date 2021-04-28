@@ -33,6 +33,16 @@ const person = {
     }
 }
 
+//Array
+const hobbies = ["Sports","Cooking"];
+// for (let hobby of hobbies){
+//     console.log(hobby);
+// }
+//this gives array
+console.log(hobbies.map(hobby => {
+    return "Hobby: " + hobby;
+} 
+));
 console.log(summarizeUser(namee,age,hasHobbies));
 console.log(add(1,2));
 person.greeet()
