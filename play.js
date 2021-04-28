@@ -1,6 +1,11 @@
-var namee = "Max";
+let namee = "Max";
 var age = 29;
-var hasHobbies = true;
+ hasHobbies = true;
+
+namee=" Şaban ";
+
+//const is never change.
+// hasHobbies = false;
 function summarizeUser( userName, userAge, userHasHobby){
     return(
         "Name is"+
